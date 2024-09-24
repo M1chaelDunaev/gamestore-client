@@ -1,0 +1,1838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Cart</class>
+ <widget class="QWidget" name="Cart">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1334</width>
+    <height>404</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">QScrollArea
+{
+background-color: qlineargradient(spread:pad, x1:0.228, y1:0.414773, x2:0.812182, y2:0.67, stop:0 rgba(50, 70, 96, 255), stop:1 rgba(32, 47, 66, 255));
+border: none;
+}
+
+QScrollBar:vertical
+{
+border: none;
+background: transparent;
+width: 8px;  
+}
+
+QScrollBar::sub-page:vertical
+{
+background: transparent;
+}
+
+QScrollBar::add-page:vertical
+{
+background: transparent;
+}
+QScrollBar::handle:vertical
+{
+background-color: rgb(135, 146, 165);
+border-radius: 3px;
+}
+
+QScrollBar::up-arrow:vertical
+{
+border: none;
+}
+QScrollBar::sub-line:vertical
+{
+border: none;
+}
+QScrollBar::down-arrow:vertical
+{
+border: none;
+}
+QScrollBar::add-line:vertical
+{
+border:none;
+}
+</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1326</width>
+        <height>1311</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="LeftBorder">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>4234234</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+border: none;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QPushButton" name="AllProducts_pushButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>80</width>
+                     <height>16</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>16</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+	border: none;
+	background-color: none;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>All products</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>10</width>
+                     <height>12</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>10</width>
+                     <height>12</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: none;
+color: rgb(150, 150, 150);</string>
+                   </property>
+                   <property name="text">
+                    <string>&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: none;
+color: rgb(150, 150, 150);</string>
+                   </property>
+                   <property name="text">
+                    <string>Your shopping cart</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>980</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>980</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>YOUR SHOPPING CART</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-color: rgb(26, 39, 54);
+border-top: 1px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+
+background-color: none;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <property name="spacing">
+              <number>15</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="ER_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="ER_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_6">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>ELDEN RING</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="ER_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>../Windows.png</pixmap>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="ER_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>59.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="ER_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="GOW_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="GOW_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_10">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>151</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>God of War: Ragnarok</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="GOW_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="GOW_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>59.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="GOW_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="Str_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="Str_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_14">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Stray</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Str_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Str_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>29.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="Str_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="HFW_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="HFW_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_18">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>161</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Horizon Forbidden West</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="HFW_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="HFW_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>59.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="HFW_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="PT_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="PT_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_22">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>171</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>A Plague Tale: Requiem</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="PT_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="PT_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>59.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="PT_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="LOU_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="LOU_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_26">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>151</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>The Last of Us: Part I</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="LOU_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="LOU_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>59.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="LOU_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="Cup_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="Cup_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_30">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>251</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Cuphead: The Delicious Last Course</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Cup_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="Cup_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>7.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="Cup_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="DL_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="DL_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_34">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>20</y>
+                  <width>101</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Dying Light II</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="DL_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="DL_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>59.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="DL_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="War_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>101</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="War_icon">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>10</y>
+                  <width>170</width>
+                  <height>80</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_38">
+                <property name="geometry">
+                 <rect>
+                  <x>200</x>
+                  <y>10</y>
+                  <width>201</width>
+                  <height>30</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Warhammer 40,000: Darktide</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="War_win">
+                <property name="geometry">
+                 <rect>
+                  <x>870</x>
+                  <y>30</y>
+                  <width>20</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+               </widget>
+               <widget class="QLabel" name="War_price">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>20</y>
+                  <width>49</width>
+                  <height>20</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>25.99$</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="War_remove">
+                <property name="geometry">
+                 <rect>
+                  <x>910</x>
+                  <y>70</y>
+                  <width>51</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color: none;
+text-decoration: underline;
+font: 10pt &quot;Arial&quot;;
+border: none;
+color: rgb(150, 150, 150);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="Total_widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>140</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>140</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgba(0, 0, 0, 80);</string>
+               </property>
+               <widget class="QLabel" name="label_41">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>30</y>
+                  <width>121</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Estimated total</string>
+                </property>
+               </widget>
+               <widget class="QLabel" name="TotalPrice">
+                <property name="geometry">
+                 <rect>
+                  <x>860</x>
+                  <y>30</y>
+                  <width>71</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>100.99$</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+               </widget>
+               <widget class="QLabel" name="label_43">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>60</y>
+                  <width>501</width>
+                  <height>16</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: none;
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Is this a purchase for yourself or is it a gift? Select one to continue to checkout.</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="PurchaseForMyself">
+                <property name="geometry">
+                 <rect>
+                  <x>550</x>
+                  <y>90</y>
+                  <width>180</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+border: none;
+color: rgba(255, 255, 255, 220);
+border-radius: 3px;
+background-color: rgb(130, 170, 40);
+}
+QPushButton:hover
+{
+color: rgba(255, 255, 255, 255);
+background-color: rgb(180, 220, 24);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Purchase for myself</string>
+                </property>
+               </widget>
+               <widget class="QPushButton" name="PurchaseAsAGift">
+                <property name="geometry">
+                 <rect>
+                  <x>750</x>
+                  <y>90</y>
+                  <width>180</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>10</pointsize>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+border: none;
+color: rgba(255, 255, 255, 220);
+border-radius: 3px;
+background-color: rgb(130, 170, 40);
+}
+QPushButton:hover
+{
+color: rgba(255, 255, 255, 255);
+background-color: rgb(180, 220, 24);
+}</string>
+                </property>
+                <property name="text">
+                 <string>Purchase as a gift</string>
+                </property>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="RightBorder">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;
+border: none;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

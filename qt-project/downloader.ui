@@ -1,0 +1,3296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Downloader</class>
+ <widget class="QWidget" name="Downloader">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>1500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">QScrollArea
+{
+background-color: qlineargradient(spread:pad, x1:0.228, y1:0.414773, x2:0.812182, y2:0.67, stop:0 rgba(50, 70, 96, 255), stop:1 rgba(32, 47, 66, 255));
+border: none;
+}
+
+QScrollBar:vertical
+{
+border: none;
+width: 8px;  
+background: transparent;
+}
+
+QScrollBar::sub-page:vertical
+{
+background: transparent;
+}
+
+QScrollBar::add-page:vertical
+{
+background: transparent;
+}
+QScrollBar::handle:vertical
+{
+background-color: rgb(135, 146, 165);
+border-radius: 3px;
+}
+
+QScrollBar::up-arrow:vertical
+{
+border: none;
+}
+QScrollBar::sub-line:vertical
+{
+border: none;
+}
+QScrollBar::down-arrow:vertical
+{
+border: none;
+}
+QScrollBar::add-line:vertical
+{
+border:none;
+}</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1200</width>
+        <height>1500</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>20</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>15</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout">
+                 <item>
+                  <widget class="QPushButton" name="Library_pushButton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>45</width>
+                     <height>16</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>50</width>
+                     <height>16</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+	border: none;
+	background-color: none;
+	color: rgb(209, 209, 209);
+}
+QPushButton:hover
+{
+	color: rgb(255, 255, 255);
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>Library</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>10</width>
+                     <height>12</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>10</width>
+                     <height>12</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: none;
+color: rgb(150, 150, 150);</string>
+                   </property>
+                   <property name="text">
+                    <string>&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border: none;
+background-color: none;
+color: rgb(150, 150, 150);</string>
+                   </property>
+                   <property name="text">
+                    <string>Download manager</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>980</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>980</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>DOWNLOAD MANAGER</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="minimumSize">
+                <size>
+                 <width>980</width>
+                 <height>2</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>980</width>
+                 <height>2</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border-color: rgb(26, 39, 54);
+border-top: 1px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+
+background-color: none;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QWidget" name="ER_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="ER_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="ER_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>10</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="ER_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>100%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="ER_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="ER_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="ER_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>ApplicationIcons/Pause.png</normaloff>ApplicationIcons/Pause.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="ER_size">
+              <property name="geometry">
+               <rect>
+                <x>848</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 59450 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="ER_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_5">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>ELDEN RING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="ER_total">
+              <property name="geometry">
+               <rect>
+                <x>782</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="GOW_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="GOW_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="GOW_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="GOW_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="GOW_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="GOW_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="GOW_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>ApplicationIcons/Resume.png</normaloff>ApplicationIcons/Resume.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="GOW_size">
+              <property name="geometry">
+               <rect>
+                <x>848</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 70210 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="GOW_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="GOW_total">
+              <property name="geometry">
+               <rect>
+                <x>782</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_7">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>God of War:
+Ragnarok</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="Str_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="Str_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="Str_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Str_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Str_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Str_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="Str_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>ApplicationIcons/Resume.png</normaloff>ApplicationIcons/Resume.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Str_size">
+              <property name="geometry">
+               <rect>
+                <x>850</x>
+                <y>80</y>
+                <width>61</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 9980 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="Str_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Str_total">
+              <property name="geometry">
+               <rect>
+                <x>789</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Stray</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="HFW_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="HFW_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="HFW_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="HFW_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="HFW_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="HFW_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="HFW_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="HFW_size">
+              <property name="geometry">
+               <rect>
+                <x>848</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 88790 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="HFW_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="HFW_total">
+              <property name="geometry">
+               <rect>
+                <x>782</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Horizon
+Forbibben West</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="PT_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="PT_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="PT_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="PT_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="PT_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="PT_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="PT_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="PT_size">
+              <property name="geometry">
+               <rect>
+                <x>848</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 54600 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="PT_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="PT_total">
+              <property name="geometry">
+               <rect>
+                <x>782</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_13">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Plague Tale:
+Requiem</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="LOU_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="LOU_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="LOU_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="LOU_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="LOU_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="LOU_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="LOU_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="LOU_size">
+              <property name="geometry">
+               <rect>
+                <x>848</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 99870 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="LOU_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="LOU_total">
+              <property name="geometry">
+               <rect>
+                <x>782</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_15">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>The Last Of Us:
+Part I</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="Cup_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="Cup_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="Cup_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Cup_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Cup_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Cup_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="Cup_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="Cup_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_17">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Cuphead:
+</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Cup_total">
+              <property name="geometry">
+               <rect>
+                <x>789</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="Cup_size">
+              <property name="geometry">
+               <rect>
+                <x>850</x>
+                <y>80</y>
+                <width>61</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 2010 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="DL_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="DL_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="DL_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="DL_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="DL_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="DL_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="DL_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="DL_size">
+              <property name="geometry">
+               <rect>
+                <x>848</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 59990 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="DL_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="DL_total">
+              <property name="geometry">
+               <rect>
+                <x>782</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_19">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Dying Light II</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="War_widget" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>980</width>
+               <height>111</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+
+border-color: rgb(50, 225, 255);
+border-top: 1px;
+border-left: 0 px;
+border-right: 0px;
+border-bottom: 0px;
+border-style: solid;
+background-color: rgba(0, 0, 0, 100);
+
+</string>
+             </property>
+             <widget class="QLabel" name="War_icon">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>15</y>
+                <width>170</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+             <widget class="QProgressBar" name="War_progressBar">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>70</y>
+                <width>300</width>
+                <height>4</height>
+               </rect>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>4</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QProgressBar
+{
+color: rgb(255, 255, 255);
+background-color: rgb(129, 129, 129);
+border: none;
+}
+
+
+
+QProgressBar:chunk
+{
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(12, 214, 255), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+}
+
+
+
+</string>
+              </property>
+              <property name="value">
+               <number>5</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+             <widget class="QLabel" name="War_procents">
+              <property name="geometry">
+               <rect>
+                <x>883</x>
+                <y>50</y>
+                <width>30</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>10%</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="War_status">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>50</y>
+                <width>100</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>10</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);
+background-color: none;
+color: rgb(55, 225, 255);
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>DOWNLOADING</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="War_speed">
+              <property name="geometry">
+               <rect>
+                <x>610</x>
+                <y>80</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;</string>
+              </property>
+              <property name="text">
+               <string>300 MB/s</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="War_button">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>50</y>
+                <width>30</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgb(0, 200, 250), 
+				stop: 0.4 rgb(30, 150, 255),
+                stop:1 rgb(60, 90, 255));
+border: none;</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>15</width>
+                <height>15</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QLabel" name="War_size">
+              <property name="geometry">
+               <rect>
+                <x>848</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>/ 50420 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="War_cancel">
+              <property name="geometry">
+               <rect>
+                <x>930</x>
+                <y>3</y>
+                <width>51</width>
+                <height>12</height>
+               </rect>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(188, 188, 188);</string>
+              </property>
+              <property name="text">
+               <string>Cancel</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="War_total">
+              <property name="geometry">
+               <rect>
+                <x>782</x>
+                <y>80</y>
+                <width>63</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>9</pointsize>
+                <italic>false</italic>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: none;
+color: rgb(220, 220, 220);
+font: 700 9pt &quot;Arial&quot;;
+border: none;
+</string>
+              </property>
+              <property name="text">
+               <string>0 MB</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_21">
+              <property name="geometry">
+               <rect>
+                <x>200</x>
+                <y>20</y>
+                <width>221</width>
+                <height>71</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border: none;
+background-color: none;
+color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+              </property>
+              <property name="text">
+               <string>Warhammer 40000:
+Darktide</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
